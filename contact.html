@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     
+      <title>Contact</title>
+
+</head>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+        height: 100%; 
+      }
+
+body {
+      background-image:url("https://images.unsplash.com/photo-1580894742597-87bc8789db3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"); ;
+      height: 75%;
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size:cover;
+      padding: 20px;
+      font-family: Arial; 
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:rgb(20, 21, 75);
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav a {
+  float:right;
+  color: rgb(175, 236, 211);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:rgb(175, 236, 211);
+  color:rgb(20, 21, 75); 
+}
+
+.topnav a.active {
+  background-color: rgb(175, 236, 211);
+  color:black;
+  float:left;
+  font-size: 20px;
+  font-weight: bold; 
+}
+
+h2 {
+        text-size-adjust: 30px;
+        color:rgb(175, 236, 211);
+        
+  }
+
+
+input[type=text], select, textarea {
+  background-color: rgb(175, 236, 211);
+  width: 100%;
+  padding: 12px;
+  border: 1px solid  #560d5f;
+  border-radius: 4px;
+  resize: vertical;
+  
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+
+
+}
+  
+
+input[type=submit] {
+  background-color:rgb(175, 236, 211);
+  color:black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color:rgb(12, 128, 143);
+  color:rgb(175, 236, 211);
+}
+
+.container {
+  border-radius: 10px;
+  background-color:rgb(20, 21, 75);
+  padding: 40px;
+
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  color:rgb(175, 236, 211);
+  font-weight: bold;
+}
+
+.col-75 {
+  float: left;
+  width: 65%;
+  margin-top: 6px;
+  
+}
+
+
+.row:after {
+  content:"";
+  display: table;
+  
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    
+  
+  }
+}
+
+
+.footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(20, 21, 75);
+    color:rgb(175, 236, 211);
+    text-align: center;
+    font-size: 20px;  
+ }
+
+
+</style>
+
+<body>
+
+
+    <div class="topnav">
+
+      <div>
+            <nav>
+              <a class="active" href="home.html">Vladyslava Antonchenko</a> 
+              <a href="contact.html">Contact</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="aboutme.html">About</a>
+    
+            </nav>
+        
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+      </div>
+    </div>
+
+      
+
+<div class="container">
+
+  <form action="/action_page.php">
+
+  <div class="row">
+    <div class="col-25">
+      <label for="name">Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="name" name="name" placeholder="Vladyslava Antonchenko">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Email</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" placeholder="vladajka16@gmail.com">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="message">Message</label>
+    </div>
+    <div class="col-75">
+      <textarea id="message" name="message" style="height:150px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Send">
+  </div>
+  </form>
+</div>
+
+<div class="footer">
+      <p>“Programming isn't about what you know; it's about what you can figure out.”
+          ― Chris Pine, Learn to Program  </p>
+    </div>
+
+
+</body>
+</html>
